@@ -1,0 +1,450 @@
+@import url('../css2');
+
+.venda{
+    position: fixed;
+    top: 1rem;         /* top-4 => 1rem */
+    right: 1rem;       /* right-4 => 1rem */
+    z-index: 30;       /* z-30 */
+    display: flex;     /* flex */
+    align-items: center; /* items-center */
+    gap: 0.75rem;
+}
+
+.venda-1{
+    display: flex;                  /* flex */
+    align-items: center;           /* items-center */
+    justify-content: center;       /* justify-center */
+    font-size: 0.75rem;            /* text-xs => 12px */
+    font-weight: 500;              /* font-medium */
+    border-radius: 5px;            /* rounded-[5px] */
+    background-color: rgba(51, 51, 51, 0.8); /* bg-gray-100 + bg-opacity-80 */
+    backdrop-filter: blur(4px);    /* backdrop-blur */
+    transition: background-color 0.2s ease-in-out; /* transition ease-in-out duration-200 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+
+}
+
+.venda-2{
+    cursor: pointer;               /* cursor-pointer */
+    display: flex;                 /* flex */
+    align-items: center;          /* items-center */
+    justify-content: center;      /* justify-center */
+    padding-left: 0.75rem;        
+    padding-right: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-radius: 0.375rem;      
+}
+
+.venda-3{
+    display: flex;               
+    align-items: center;   
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;       
+    justify-content: center;
+    padding-top: 5;
+    color: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+    background-color: #36393F;
+    
+}
+
+.all {
+
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+
+
+
+ 
+    .avatar:focus {
+        outline: none;
+        -webkit-tap-highlight-color: transparent; 
+    }
+
+
+.discord-profile {
+    
+    text-align: center;
+    padding: 90px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.4);
+    color: #FFFFFF;
+    position: relative;
+    margin: 10px;
+    max-width: 150px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+
+[data-tilt] {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.profile-cover {
+    width: 100%;
+    height: 200px;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    z-index: -1;
+}
+
+.avatar {
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-top: -70px;
+    display: block;
+    margin-left: 87px;
+    margin-right: auto;
+    border-radius: 100px;
+    border: 1px;
+    transition-duration: 0.4s;
+    transition-property: transform;
+}
+
+.pfp img { 
+    width: 110px;
+    height: 110px;
+
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.avatars {
+    width: 75px;
+    height: 75px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    border: 5px solid #444;
+    cursor: pointer;
+}
+
+.avatard {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    border: 5px solid #444;
+    cursor: pointer;
+}
+.pfp img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    transition: .2s;
+}
+.pfp img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    transition: .2s;
+}
+
+.nick {
+    font-family: 'LaachirDeeper-Bold', sans-serif; 
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 -9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.nickr {
+    font-family: 'LaachirDeeper-Bold';
+    font-size: 29px;
+    font-weight: bold; 
+    margin: 0 0 -9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.subnick {
+    font-family: 'LaachirDeeper-Bold', sans-serif;  
+    font-size: 16px;
+    opacity: 0.7;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.badges {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    
+}
+
+
+.badge {
+    width: 23px;
+    height: 23px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7px;
+  
+    position: relative;
+
+}
+
+.badge[data-tooltip] {
+    position: relative;
+    cursor: pointer;
+}
+
+.badge[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color: #444;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 1;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: 'Arial', sans-serif;
+}
+
+.badge[data-tooltip]:hover::after {
+    opacity: 1;
+}
+
+.badge,
+.social-button,
+.subnick {
+    margin-top: 10px;
+}
+
+.social-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-button {
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-button:hover {
+    background-color: #eb0091; 
+}
+
+.social-icon {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.server-button {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.server-button-text {
+    font-family: '';
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-left: 10px;
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+audio {
+    controls autoplay style="background: none; border: none; width: 100%;";
+}audio {
+    controls autoplay style="background: none; border: none; width: 100%;";
+}
+.discord-profilee {
+    
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.4);
+    color: #FFFFFF;
+    position: relative;
+    margin: 25px;
+    max-width: 400px;
+    height: 350px;
+    background-color: #000000;
+}
+
+
+.social-buttonss {
+    align-items: center;
+    justify-content: center;
+}
+
+.social-buttonn {
+    margin: 10px 10px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-buttonn:hover {
+    background-color: red; 
+}
+
+.social-iconn {
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.server-buttonn {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    user-select: none;
+}
+
+.server-buttonn-text {
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-left: 10px;
+    cursor: default;
+    align-items: center;
+    justify-content: center;
+}
+
+.userss {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: beige;
+    margin: 10px -110px 10px 10px;
+}
+
+
+
+@media (max-width: 650px) {
+    body {
+        margin: 100px;
+        padding: 90px;
+        width: 100%;
+        height: 200vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+  @media (max-width: 500px) {
+  body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+
+    @media (max-width: 300px) {
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    @media (max-width: 400px) {
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
