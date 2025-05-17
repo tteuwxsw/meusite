@@ -1,151 +1,147 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Perfil com integração Discord, música e redes sociais." />
-    <title>real xd</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Perfil com integração Discord, música e redes sociais." />
+  <title>real xd</title>
 
-    <!-- Ícone da aba -->
-    <link rel="icon" href="images/dinheiro-voador.png" />
+  <!-- Ícone da aba -->
+  <link rel="icon" href="images/dinheiro-voador.png" />
 
-    <!-- Estilos -->
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/main.css" />
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/main.css" />
 
-    <!-- Scripts auxiliares -->
-    <script src="js/point.js"></script>
-    <script src="js/blocker.js"></script>
-    <script src="js/api.js"></script>
-    <script src="js/x.js"></script>
+  <!-- Scripts auxiliares -->
+  <script src="js/point.js"></script>
+  <script src="js/blocker.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/x.js"></script>
 
-    <script>
-      function audioPlay() {
-        const audio = document.getElementById("audio");
-        audio.volume = 0.7;
-        audio.currentTime = 369;
-        audio.play();
+  <script>
+    function audioPlay() {
+      const audio = document.getElementById("audio");
+      audio.volume = 0.7;
+      audio.currentTime = 369;
+      audio.play();
+    }
+
+    function fetchUserImage(imgElementId) {
+      const imgPath = "images/rt.png";
+      document.getElementById(imgElementId).src = imgPath;
+    }
+
+    function translateStatus(status) {
+      switch (status) {
+        case "online": return "Online";
+        case "idle": return "Ausente";
+        case "dnd": return "Não Perturbe";
+        case "offline": return "Offline";
+        default: return status;
       }
+    }
 
-      function fetchUserImage(imgElementId) {
-        const imgPath = "images/rt.png";
-        document.getElementById(imgElementId).src = imgPath;
-      }
+    window.onload = function () {
+      fetchUserImage("rt");
+    };
 
-      function translateStatus(status) {
-        switch (status) {
-          case "online":
-            return "Online";
-          case "idle":
-            return "Ausente";
-          case "dnd":
-            return "Não Perturbe";
-          case "offline":
-            return "Offline";
-          default:
-            return status;
-        }
-      }
+    let originalTitle = "real xd";
+    let blinkState = true;
+    setInterval(() => {
+      document.title = blinkState ? "✦ real xd ✦" : originalTitle;
+      blinkState = !blinkState;
+    }, 1000);
+  </script>
+</head>
 
-      window.onload = function () {
-        fetchUserImage("rt");
-      };
+<body>
 
-      // Anima o título da aba
-      let originalTitle = "real xd";
-      let blinkState = true;
-      setInterval(() => {
-        document.title = blinkState ? "✦ real xd ✦" : originalTitle;
-        blinkState = !blinkState;
-      }, 1000);
-    </script>
-  </head>
-
-  <body>
-    <!-- Botão de venda / link do Discord -->
-    <div class="venda">
-      <div class="venda-1">
-        <a href="https://discord.gg/dqzcnuFYfA" class="venda-2">
-          <span class="venda-3">💸 real xd</span>
-        </a>
-      </div>
+  <!-- Botão do Discord -->
+  <div class="venda">
+    <div class="venda-1">
+      <a href="https://discord.gg/dqzcnuFYfA" class="venda-2">
+        <span class="venda-3">💸 real xd</span>
+      </a>
     </div>
+  </div>
 
-    <!-- Áudio de fundo -->
-    <audio loop preload="auto" id="audio">
-      <source src="media/neww.mp3" type="audio/mpeg" />
-      Seu navegador não suporta áudio.
-    </audio>
+  <!-- Áudio de fundo -->
+  <audio loop preload="auto" id="audio">
+    <source src="media/neww.mp3" type="audio/mpeg" />
+    Seu navegador não suporta áudio.
+  </audio>
 
-    <!-- Tela de overlay com clique -->
-    <input type="checkbox" autocomplete="off" id="overlay-toggle" />
-    <div class="overlay fullscreen">
-      <label for="overlay-toggle" onclick="audioPlay();">
-        <span class="overlayno-hover hover" style="font-family: monospace; font-size: 0.6em;">click</span>
-        <span class="overlayhover hover" style="font-family: monospace; font-size: 0.6em;">
-          <img src="images/start-gif.gif" alt="Clique para iniciar animação" />
-        </span>
-      </label>
+  <!-- Overlay -->
+  <input type="checkbox" autocomplete="off" id="overlay-toggle" />
+  <div class="overlay fullscreen">
+    <label for="overlay-toggle" onclick="audioPlay();">
+      <span class="overlayno-hover hover" style="font-family: monospace; font-size: 0.6em;">click</span>
+      <span class="overlayhover hover" style="font-family: monospace; font-size: 0.6em;">
+        <img src="images/start-gif.gif" alt="Clique para iniciar animação" />
+      </span>
+    </label>
+  </div>
+
+  <!-- VÍDEO DE FUNDO MELHORADO -->
+  <video autoplay loop muted playsinline preload="auto" disablePictureInPicture controlslist="nodownload nofullscreen noremoteplayback" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+    <source src="media/neww.mp4" type="video/mp4" />
+    Seu navegador não suporta vídeo.
+  </video>
+
+  <!-- Perfil -->
+  <div class="real-xd" style="display: flex; align-items: center; justify-content: center; height: 100vh;">
+    <div class="all" style="text-align: center;">
+      <div id="discord-profile" style="font-family: Arial;"></div>
     </div>
+  </div>
 
-    <!-- Vídeo de fundo -->
-    <video autoplay loop muted>
-      <source src="media/neww.mp4" type="video/mp4" />
-      Seu navegador não suporta vídeo.
-    </video>
+  <!-- Script do perfil Discord -->
+  <script>
+    fetch("https://api.lanyard.rest/v1/users/527890616739430415")
+      .then(response => response.json())
+      .then(data => {
+        const user = data.data.discord_user;
+        const status = data.data.discord_status;
+        const avatarHash = user.avatar;
+        const isGif = avatarHash.startsWith("a_");
+        const avatarExt = isGif ? "gif" : "png";
+        const avatarURL = `https://cdn.discordapp.com/avatars/${user.id}/${avatarHash}.${avatarExt}?size=1024`;
 
-    <!-- Container do perfil -->
-    <div class="real-xd" style="display: flex; align-items: center; justify-content: center; height: 100vh;">
-      <div class="all" style="text-align: center;">
-        <div id="discord-profile" style="font-family: Arial;"></div>
-      </div>
-    </div>
-
-    <!-- Script: Carrega o perfil Discord via Lanyard -->
-    <script>
-      fetch("https://api.lanyard.rest/v1/users/527890616739430415")
-        .then((response) => response.json())
-        .then((data) => {
-          const user = data.data.discord_user;
-          const status = data.data.discord_status;
-          const avatarHash = user.avatar;
-          const isGif = avatarHash.startsWith("a_");
-          const avatarExt = isGif ? "gif" : "png";
-          const avatarURL = `https://cdn.discordapp.com/avatars/${user.id}/${avatarHash}.${avatarExt}?size=1024`;
-
-          document.getElementById("discord-profile").innerHTML = `
-            <div class="discord-profile" style="display: inline-block;">
-              <div class="profile animate__animated animate__fadeInUp animate__fast">
-                <div class="pfp">
-                  <img class="profile-img" src="${avatarURL}" alt="Avatar Discord" style="border-radius: 50%; width: 100px; box-shadow: 0 0 10px black;" />
-                </div>
-                <div class="nickr">${user.username}${user.discriminator !== "0" ? "#" + user.discriminator : ""}</div>
-                <div class="nick subnick">Status: ${translateStatus(status)}</div>
-                <div class="badges">
-                  <div class="badge" style="background-image: url('images/opala.png');" data-tooltip="Assinante desde 3 de abr. de 2017"></div>
-                  <div class="badge" style="background-image: url('images/dev.png');" data-tooltip="Desenvolvedor Verificado de Bots Pioneiro"></div>
-                  <div class="badge" style="background-image: url('images/booster.png');" data-tooltip="Impulsionando o servidor desde 11 de dez. de 2019"></div>
-                </div>
-                <div class="social-buttons">
-                  <a href="https://www.instagram.com/ttheuszzk_/" target="_blank" class="social-button" aria-label="Instagram">
-                    <i class="fab fa-instagram social-icon"></i>
-                  </a>
-                  <a href="https://www.youtube.com/@henrryXhighlights" target="_blank" class="social-button" aria-label="YouTube">
-                    <i class="fab fa-youtube social-icon"></i>
-                  </a>
-                  <a href="https://www.tiktok.com/@ttheuszzk_" target="_blank" class="social-button" aria-label="TikTok">
-                    <i class="fab fa-tiktok social-icon"></i>
-                  </a>
-                </div>
+        document.getElementById("discord-profile").innerHTML = `
+          <div class="discord-profile" style="display: inline-block;">
+            <div class="profile animate__animated animate__fadeInUp animate__fast">
+              <div class="pfp">
+                <img class="profile-img" src="${avatarURL}" alt="Avatar Discord" style="border-radius: 50%; width: 100px; box-shadow: 0 0 10px black;" />
+              </div>
+              <div class="nickr">${user.username}${user.discriminator !== "0" ? "#" + user.discriminator : ""}</div>
+              <div class="nick subnick">Status: ${translateStatus(status)}</div>
+              <div class="badges">
+                <div class="badge" style="background-image: url('images/opala.png');" data-tooltip="Assinante desde 3 de abr. de 2017"></div>
+                <div class="badge" style="background-image: url('images/dev.png');" data-tooltip="Desenvolvedor Verificado de Bots Pioneiro"></div>
+                <div class="badge" style="background-image: url('images/booster.png');" data-tooltip="Impulsionando o servidor desde 11 de dez. de 2019"></div>
+              </div>
+              <div class="social-buttons">
+                <a href="https://www.instagram.com/ttheuszzk_/" target="_blank" class="social-button" aria-label="Instagram">
+                  <i class="fab fa-instagram social-icon"></i>
+                </a>
+                <a href="https://www.youtube.com/@henrryXhighlights" target="_blank" class="social-button" aria-label="YouTube">
+                  <i class="fab fa-youtube social-icon"></i>
+                </a>
+                <a href="https://www.tiktok.com/@ttheuszzk_" target="_blank" class="social-button" aria-label="TikTok">
+                  <i class="fab fa-tiktok social-icon"></i>
+                </a>
               </div>
             </div>
-          `;
-        })
-        .catch((err) => {
-          console.error("Erro ao carregar dados do Discord:", err);
-          document.getElementById("discord-profile").innerText = "Não foi possível carregar o perfil.";
-        });
-    </script>
-  </body>
+          </div>
+        `;
+      })
+      .catch(err => {
+        console.error("Erro ao carregar dados do Discord:", err);
+        document.getElementById("discord-profile").innerText = "Não foi possível carregar o perfil.";
+      });
+  </script>
+
+</body>
 </html>
