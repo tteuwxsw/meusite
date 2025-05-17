@@ -396,55 +396,73 @@ audio {
 
 
 @media (max-width: 650px) {
-    body {
-        margin: 100px;
-        padding: 90px;
-        width: 100%;
-        height: 200vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-  @media (max-width: 500px) {
   body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
+}
 
-    @media (max-width: 300px) {
-    body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+@media (max-width: 500px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
 
-    @media (max-width: 400px) {
-    body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+@media (max-width: 400px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 300px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+/* Remove scroll geral em todos os dispositivos */
+html, body {
+  height: 100dvh;
+  overflow: hidden !important;
+  overscroll-behavior: none;
+  touch-action: none;
+  max-height: 100dvh;
+}
